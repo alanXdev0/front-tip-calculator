@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 const config: Config = {
   content: [
@@ -7,6 +8,10 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'xs': '375px',
+      ...defaultTheme.screens,
+    },
     colors: {
       primary: "hsl(172, 67%, 45%)",
       'very-dark-cyan': "hsl(183, 100%, 15%)",
@@ -15,6 +20,7 @@ const config: Config = {
       'light-grayish-cyan': "hsl(185, 41%, 84%)",
       'very-light-grayish-cyan': "hsl(189, 41%, 97%)",
       'white': "hsl(0, 0%, 100%)",
+      'red': 'red'
     }
   },
   plugins: [],

@@ -20,8 +20,15 @@
   font-size: 11px;
   text-align: center;
   position: fixed;
-  bottom: 10px;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.activeButton {
+  background-color: theme("colors.primary");
+  color: theme("colors.very-dark-cyan");
 }
